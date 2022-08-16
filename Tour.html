@@ -1,0 +1,37 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="tour.css">
+        <link rel="stylesheet" href="inner.css">
+        <title>Login</title>
+        <script>
+        function login() {
+        var b=document.getElementById("fname");
+        var c=document.getElementById("lname");
+        if (b.value=="tourguide" && c.value=="1234") {
+            window.open("innerlogin.html","_self");
+        }
+        else {
+            alert("You have entered incorrect Password, please Try Again");
+            }
+     }
+
+        </script>
+    </head>
+    <title>Tour Guide</title>
+    <body class="bg">
+        <div class="bar-div"> 
+            <img src="images\logo.png" alt="">
+            <ul>
+                <li class="list"><a href="inner.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <img src="images\2.png" class="loginimg" alt="">
+            <h4 class="loginimg">Member Login</h4>
+            <label for="fname">Email</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Password</label>
+            <input type="password" id="lname" name="lname" required>
+            <button class="button" style="vertical-align:middle" id="b1" onclick="login()"><span>Login </span>
+    </body>
+</html>

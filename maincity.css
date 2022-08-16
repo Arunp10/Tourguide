@@ -1,0 +1,100 @@
+#shop{
+    display: none;
+}
+#park{
+    display: none;
+}
+#entertainment{
+    display: none;
+}
+#dinning{
+    display: none;
+}
+.shop{
+    width: 100%;
+    height: 252px;
+}
+.shop2{
+    width: 100%;
+    height: 252px;
+    margin-top: 4%;
+}
+.insideshop{
+    background-color: rgb(224, 224, 224);
+    width: 43%;
+    border: 1px solid; 
+    height: 252px;
+    margin-left: 2%;
+}
+.insideshop:hover{
+    border: 2px solid;
+}
+.insideshop2{
+    background-color: rgb(224, 224, 224);
+    width: 43%;
+    border: 1px solid; 
+    height: 252px;
+    margin-left: -11%;
+    margin-top: -18.8%;
+    float: right;
+}
+.insideshop2:hover{
+    border: 2px solid;
+}
+.location{
+    background-color: rgb(76, 160, 175);
+    border: 1px solid  #00579A;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-top: -11%;
+    margin-left: 43%;
+    width: 65px;
+}
+.time{
+    background-color: rgb(76, 160, 175);
+    border: 1px solid  #00579A;
+    border-radius:25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-top: -8.7%;
+    margin-left: 77%;
+}
+.location:hover{
+    background-color: #00579A;
+    color:white;
+}
+.time:hover{
+    background-color: #00579A;
+    color:white;
+}
+.imgs{
+    width: 40%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.selector{
+    margin-left: 39%;
+}
+.light{
+    width: 5%;
+    height: 10%;
+    margin-top: -1%;
+    vertical-align: middle;
+}
+.garden{
+    width: 11%;
+    height: 10%;
+    margin-top: -1%;
+    vertical-align: middle;
+}

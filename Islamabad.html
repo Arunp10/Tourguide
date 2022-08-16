@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Islamabad</title>
+    <link rel="stylesheet" href="maincity.css">
+    <link rel="stylesheet" href="inner.css">
+    <script type="text/javascript">
+        function selectCategory(option)
+        {
+           var shopDiv=document.getElementById('shop');
+           var parkDiv=document.getElementById('park');
+           var dinDiv=document.getElementById('dinning'); 
+           var selected = option[option.selectedIndex].value;
+           if(selected==""){
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+            else if(selected == "Shopping")
+           {
+               shopDiv.style.display ='block';
+               parkDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+           else if (selected == "Parks")
+           {  
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='block'; 
+               dinDiv.style.display ='none';  
+           }
+           else if(selected="Dinning"){
+            shopDiv.style.display ='none';
+               parkDiv.style.display ='none'; 
+               dinDiv.style.display ='block';
+           }
+        }
+    </script>
+</head>
+<body>
+    <div class="bar-div"> 
+        <img src="images\logo.png" alt="">
+        <ul>
+            <li class="list"><a href="tour.html">Logout</a></li>
+            <li class="list"><a href="innerlogin.html">Home</a></li>
+        </ul>
+    </div>
+    <br><br><br><br> <br>
+    <h1>Welcome to Islamabad "The City of Peace"</h1>
+    <div class="selector">Browse by Category <Select id="ddlCategory" onchange="selectCategory(this)">
+        <option id="select0" value="" >Please Select</option>
+        <option id="select1" value="Shopping" >Shopping</option>
+        <option id="select2" value="Parks" >Parks</option>
+        <option id="select3" value="Dinning">Dinning</option>
+    </Select>
+    </div>
+<div id="shop">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\safa.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Safa Gold Mall</h2>
+            <a class="location" href="https://www.google.com/maps/place/Safa+Gold+Mall/@33.7203262,73.0533734,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbfa7067ea8d3:0x49a6054408b8b584!8m2!3d33.7203262!4d73.0555621"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\empo.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Emporium Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Emporium+Islamabad/@33.6984354,72.9413542,12z/data=!4m8!1m2!2m1!1sEmporium+Mall+!3m4!1s0x38dfbe6b8c012f61:0x2cd40134a10726d1!8m2!3d33.6984354!4d73.011392"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\giga.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Giga Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Giga+Mall/@33.5209174,73.1555222,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfed736df2ee2b:0xd2c18a69157f1c54!8m2!3d33.5209174!4d73.1577109"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\cen.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Centaurus Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Centaurus+Mall+Islamabad/@33.7076522,73.0478687,17z/data=!3m1!4b1!4m8!3m7!1s0x38dfbfb0f4f77379:0xf8c50b8651f56d02!5m2!4m1!1i2!8m2!3d33.7076522!4d73.0500574"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+</div>    
+<div id="park">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\Lake.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Lake View Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Lake+View+Park/@33.7138924,73.1304599,17z/data=!4m8!1m2!2m1!1sthe+lake+view+park+islam!3m4!1s0x0:0xba40953cc50baef4!8m2!3d33.7117852!4d73.1319965"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\bird.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Bird Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Bird+Park+Islamabad/@33.7143579,73.1311122,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfc04ae0e60027:0x481bafd417c4ee93!8m2!3d33.7143579!4d73.1333009"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\fatima.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Fatima Jinnah Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Fatima+Jinnah+Park/@33.7017235,73.0206286,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbe4155555555:0xe5f819ae171cf19a!8m2!3d33.7017235!4d73.0228173"target="_blank">Location</a>
+            <a class="time">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\kach.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Kachnar Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Kachnar+Park/@33.6701923,73.0795372,17z/data=!3m1!4b1!4m5!3m4!1s0x38df954e7645ca85:0x505dd6eeb0d9781!8m2!3d33.6701923!4d73.0817259"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+</div>
+<div id="dinning">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\monal.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Monal Downtown</h2>
+           <a class="location" href="https://www.google.com/maps/place/Monal+Downtown/@33.595134,73.0551445,17z/data=!3m1!4b1!4m5!3m4!1s0x38df94be3c44d621:0xd6771cd06beb31d6!8m2!3d33.595134!4d73.0573332"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\kabul.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Kabul Restaurant</h2>
+           <a class="location" href="https://www.google.com/maps/place/Kabul+Restaurant/@33.7212492,73.0538283,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbfa73bffffff:0x619d849ff42ce8e8!8m2!3d33.7212492!4d73.056017"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\tus.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Tuscany Courtyard</h2>
+           <a class="location" href="https://www.google.com/maps/place/Tuscany+Courtyard/@33.7355241,73.0761266,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbf079cabb7f5:0xc8a2c73246e0492e!8m2!3d33.7355241!4d73.0783153"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-12pm,Weekends:6am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\street.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Street 1 Cafe</h2>
+           <a class="location" href="https://www.google.com/maps/place/Street+1+Cafe/@33.7353997,73.076008,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbf7add13fd47:0x228328ba4473a11b!8m2!3d33.7353997!4d73.0781967"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am." >Time</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

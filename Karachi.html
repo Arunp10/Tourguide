@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Karachi</title>
+    <link rel="stylesheet" href="maincity.css">
+    <link rel="stylesheet" href="inner.css">
+    <script type="text/javascript">
+        function selectCategory(option)
+        {
+           var shopDiv=document.getElementById('shop');
+           var parkDiv=document.getElementById('park');
+           var enterDiv=document.getElementById('entertainment'); 
+           var dinDiv=document.getElementById('dinning'); 
+           var selected = option.value;
+           if(selected==""){
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='none';
+               enterDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+            else if(selected == "Shopping")
+           {
+               shopDiv.style.display ='block';
+               parkDiv.style.display ='none';
+               enterDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+           else if (selected == "Parks")
+           {  
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='block'; 
+               enterDiv.style.display ='none';
+               dinDiv.style.display ='none';  
+           }
+           else if (selected == "Entertainment")
+           {
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='none'; 
+               enterDiv.style.display ='block';
+               dinDiv.style.display ='none';
+           }
+           else if(selected="Dinning"){
+            shopDiv.style.display ='none';
+               parkDiv.style.display ='none'; 
+               enterDiv.style.display ='none';
+               dinDiv.style.display ='block';
+           }
+        }
+    </script>
+</head>
+<body>
+    <div class="bar-div"> 
+        <img src="images\logo.png" alt="">
+        <ul>
+            <li class="list"><a href="tour.html">Logout</a></li>
+            <li class="list"><a href="innerlogin.html">Home</a></li>
+        </ul>
+    </div>
+    <br><br><br><br> <br>
+    <h1>Welcome to Karachi "The City of <img class="light" src=images\light.gif>(Lights)"</h1>
+    <div class="selector">Browse by Category <Select id="ddlCategory" onchange="selectCategory(this)">
+        <option id="select0" value="" >Please Select</option>
+        <option id="select1" value="Shopping" >Shopping</option>
+        <option id="select2" value="Parks" >Parks</option>
+        <option id="select3" value="Entertainment">Entertainment</option>
+        <option id="select4" value="Dinning">Dinning</option>
+    </Select>
+    </div>
+<div id="shop">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\hyp.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Dolmen Mall Clifton</h2>
+            <a class="location" href="https://www.google.com/maps/place/Carrefour/@24.8017507,67.0284951,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33d099ab523ab:0x315e840498e311d7!8m2!3d24.8017507!4d67.0306838"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\lucky-one.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">LuckyOne Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Lucky+One+Mall/@24.9321896,67.0872167,15z/data=!4m2!3m1!1s0x0:0x35709df45c0003aa?sa=X&ved=2ahUKEwix6-Xe_t3mAhWlTRUIHcmXAMkQ_BIwFnoECA8QCA"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\ocean.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Ocean Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Ocean+Mall/@24.8237245,67.0357528,15z/data=!4m5!3m4!1s0x0:0xb5ceaeb2dfe297eb!8m2!3d24.8237245!4d67.0357528"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\mili.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Miillennium Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Millennium+Mall/@24.9011065,67.1155023,15z/data=!4m5!3m4!1s0x0:0x3bfde63eb356ebc0!8m2!3d24.9011065!4d67.1155023"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+</div>    
+<div id="park">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\Jheel.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Jheel Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Jheel+Park/@24.8699122,67.0628371,15z/data=!4m5!3m4!1s0x0:0x4dbc4e8d97062104!8m2!3d24.8699122!4d67.0628371"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\safari.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Safari Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Safari+Park/@24.9254611,67.1076314,15z/data=!4m2!3m1!1s0x0:0x59f6e847f82104b2?sa=X&ved=2ahUKEwiA0ebW9t7mAhUyrXEKHQjDDvIQ_BIwGXoECCAQCA"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\zamzama.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Zamzama Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Zamzama+Park/@24.8148464,67.0383926,15z/data=!4m5!3m4!1s0x0:0x63f83101a17941e0!8m2!3d24.8148464!4d67.0383926"target="_blank">Location</a>
+            <a class="time">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\aladin.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Aladin Amusement Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Aladin+Park/@24.9139539,67.1066398,15z/data=!4m5!3m4!1s0x0:0x6d93b085a000fd3e!8m2!3d24.9139539!4d67.1066398"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+</div>
+<div id="entertainment">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\nueplex.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Place - Nueplex Cinemas</h2>
+           <a class="location" href="https://www.google.com/maps/place/The+Place+-+Nueplex+Cinemas/@24.7793893,67.0897263,15z/data=!4m5!3m4!1s0x0:0x6d7ad92553370cc6!8m2!3d24.7793893!4d67.0897263"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\arena.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Arena Club </h2>
+           <a class="location" href="https://www.google.com/maps/place/Arena+-+Sports+%26+Family+Recreational+Complex/@24.887577,67.089838,15z/data=!4m5!3m4!1s0x0:0xfc5c014e17dd4f74!8m2!3d24.887577!4d67.089838"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\sea.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Sea View(Tourist Attraction)</h2>
+           <a class="location" href="https://www.google.com/maps/place/Sea+View+Karachi./@24.7896667,67.0438605,15z/data=!4m2!3m1!1s0x0:0xa38d88f600dc5450?sa=X&ved=2ahUKEwiqzNmZq-DmAhWdQRUIHREtB6UQ_BIwE3oECAwQCA"target="_blank">Location</a>
+            <a class="time"title="Weekdays:Wholeday(Suitable Time: Evening)">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\port.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Port Grand</h2>
+           <a class="location" href="https://www.google.com/maps/place/Port+Grand/@24.8448588,66.9888239,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb315fd9484034d:0xa34ea99b28ea0c40!8m2!3d24.8448588!4d66.9910126"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+</div>
+<div id="dinning">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\pranzo.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Pranzo</h2>
+           <a class="location" href="https://www.google.com/maps/place/Pranzo/@24.8168316,67.0228863,15z/data=!4m5!3m4!1s0x0:0x11ffc7468dd4d125!8m2!3d24.8168316!4d67.0228863"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\kolachi.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Kolachi Restaurant</h2>
+           <a class="location" href="https://www.google.com/maps/place/Kolachi+Restaurant/@24.7565704,67.0931964,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb324a775ed07c9:0xbee5f39cab2cec77!8m2!3d24.7565704!4d67.0953851"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\boat.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Boat Basin Food Street</h2>
+           <a class="location" href="https://www.google.com/maps/place/Boat+Basin/@24.8216397,67.0082233,15z/data=!3m1!4b1!4m5!3m4!1s0x3eb33d946550d8cb:0x1ccba3b27a2a0f14!8m2!3d24.8212312!4d67.0181618"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-12pm,Weekends:6am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\pak.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Pakistani Movenpick</h2>
+           <a class="location" href="https://www.google.com/maps/place/The+Pakistani/@24.8467113,67.0242245,17z/data=!4m8!1m2!2m1!1sthe+pakistani+movenpick!3m4!1s0x3eb33ddf1b01aa3f:0x20b65b239b914753!8m2!3d24.8468939!4d67.0265264"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am." >Time</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

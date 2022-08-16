@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lahore</title>
+    <link rel="stylesheet" href="maincity.css">
+    <link rel="stylesheet" href="inner.css">
+    <script type="text/javascript">
+        function selectCategory(option)
+        {
+           var shopDiv=document.getElementById('shop');
+           var parkDiv=document.getElementById('park');
+           var dinDiv=document.getElementById('dinning'); 
+           var selected = option[option.selectedIndex].value;
+           if(selected==""){
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+            else if(selected == "Shopping")
+           {
+               shopDiv.style.display ='block';
+               parkDiv.style.display ='none';
+               dinDiv.style.display ='none';   
+           }
+           else if (selected == "Parks")
+           {  
+               shopDiv.style.display ='none';
+               parkDiv.style.display ='block'; 
+               dinDiv.style.display ='none';  
+           }
+           else if(selected="Dinning"){
+            shopDiv.style.display ='none';
+               parkDiv.style.display ='none'; 
+               dinDiv.style.display ='block';
+           }
+        }
+    </script>
+</head>
+<body>
+    <div class="bar-div"> 
+        <img src="images\logo.png" alt="">
+        <ul>
+            <li class="list"><a href="tour.html">Logout</a></li>
+            <li class="list"><a href="innerlogin.html">Home</a></li>
+        </ul>
+    </div>
+    <br><br><br><br> <br>
+    <h1>Welcome to Lahore "The City of <img class="garden" src=images\garden.gif >(Gardens)"</h1>
+    <div class="selector">Browse by Category <Select id="ddlCategory" onchange="selectCategory(this)">
+        <option id="select0" value="" >Please Select</option>
+        <option id="select1" value="Shopping" >Shopping</option>
+        <option id="select2" value="Parks" >Parks</option>
+        <option id="select3" value="Dinning">Dinning</option>
+    </Select>
+    </div>
+<div id="shop">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\mol.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">The Mall of Lahore</h2>
+            <a class="location" href="https://www.google.com/maps/place/Mall+of+Lahore/@31.5293104,74.3767163,17z/data=!3m1!4b1!4m5!3m4!1s0x3919050c65cf88c7:0x640ecde6ca852c31!8m2!3d31.5293104!4d74.378905"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\pace.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Pace Shopping Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Pace+Shopping+Mall/@31.5153059,74.3405339,17z/data=!3m1!4b1!4m5!3m4!1s0x39190456906fa357:0x94e9a63e3f68da78!8m2!3d31.5153059!4d74.3427226"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\amanah.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Amanah Mall</h2>
+           <a class="location" href="https://www.google.com/maps/place/Amanah+Mall/@31.4668763,74.31354,17z/data=!3m1!4b1!4m5!3m4!1s0x391906abb85c74dd:0x355f6b3dda977640!8m2!3d31.4668763!4d74.3157287"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\centerpoint.png" alt="">
+            <h2 style="float: right;padding-right:11px ;">Center Point Plaza</h2>
+           <a class="location" href="https://www.google.com/maps/place/Center+Point+Plaza/@31.5070227,74.3338726,17z/data=!3m1!4b1!4m5!3m4!1s0x3919045d4ff88717:0x2bb2b2c6f2ff56d1!8m2!3d31.5070227!4d74.3360613"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+</div>    
+<div id="park">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\lwp.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Lahore Wildlife Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Lahore+Wildlife+Park/@31.3843391,74.2073639,17z/data=!3m1!4b1!4m5!3m4!1s0x3918ffe320ac3363:0xfbb52014ea0922be!8m2!3d31.3843391!4d74.2095526"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\ip.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Iqbal Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Iqbal+Park/@31.595639,74.3074403,17z/data=!3m1!4b1!4m5!3m4!1s0x39191c82deca71ed:0xb1db50ad0ec01e7f!8m2!3d31.595639!4d74.309629"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\rcp.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Race Course Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Race+Course+Park/@31.5956387,74.3008742,15z/data=!4m5!3m4!1s0x391904ea9de1464b:0x78b4a9219b7bb24f!8m2!3d31.5444814!4d74.3345479"target="_blank">Location</a>
+            <a class="time">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\MTP.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Model Town Park</h2>
+           <a class="location" href="https://www.google.com/maps/place/Model+Town+Park/@31.4845254,74.3241308,17z/data=!3m1!4b1!4m5!3m4!1s0x391904105ec589ff:0x67af359ad6cad4b3!8m2!3d31.4845254!4d74.3263195"target="_blank">Location</a>
+            <a class="time"  title="Weekdays:6am-8pm,Weekends:6am-8pm.">Time</a>
+        </div>
+    </div>
+</div>
+<div id="dinning">
+    <div class="shop">
+        <div class="insideshop">
+            <img class="imgs" src="images\have.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Haveli Restaurant</h2>
+           <a class="location" href="https://www.google.com/maps/place/Haveli+Restaurant/@31.5870625,74.3091557,17z/data=!3m1!4b1!4m5!3m4!1s0x39191c9dfc3789fb:0x22d30131c3dfa74a!8m2!3d31.5870579!4d74.3113444"target="_blank">Location</a>
+            <a class="time" title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\coco.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Cooco's Den</h2>
+           <a class="location" href="https://www.google.com/maps/place/Cooco's+Den/@31.5870331,74.3093508,17z/data=!3m1!4b1!4m5!3m4!1s0x39191c9df8a58b85:0xb0633b0025784df4!8m2!3d31.5870331!4d74.3115395"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am.">Time</a>
+        </div>
+    </div>
+    <div class="shop2">
+        <div class="insideshop">
+            <img class="imgs" src="images\covo.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Covo Restaurant</h2>
+           <a class="location" href="https://www.google.com/maps/place/Covo+Restaurant/@31.5527487,74.3359386,17z/data=!3m1!4b1!4m5!3m4!1s0x391904c8f590d863:0xcbc3775cf0e3977a!8m2!3d31.5527487!4d74.3381273"target="_blank">Location</a>
+            <a class="time" title="Weekdays:6am-12pm,Weekends:6am-1am.">Time</a>
+        </div>
+        <div class="insideshop2">
+            <img class="imgs" src="images\salt1.jpg" alt="">
+            <h2 style="float: right;padding-right:11px ;">Salt'n Pepper Village</h2>
+           <a class="location" href="https://www.google.com/maps/place/Salt'n+Pepper+Village+Lahore/@31.5106555,74.3488223,17z/data=!3m1!4b1!4m5!3m4!1s0x39190451a40a560d:0x37d5767649c0f5a7!8m2!3d31.5106555!4d74.351011"target="_blank">Location</a>
+            <a class="time"title="Weekdays:10am-12pm,Weekends:10am-1am." >Time</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

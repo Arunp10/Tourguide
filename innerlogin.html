@@ -1,0 +1,128 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="inner.css">
+    <title>Logged in</title>
+    <style>
+        .adminlogin{
+            width: 19%;
+            height:21%;
+            background-color: white;
+            margin-left: 41%;
+            border: 2px solid #273B7A;
+            border-radius: 25px;
+            margin-top: 8%;
+
+        }
+        .divinside{
+            width: 100%;
+            height: 27%;
+            background-color: #273B7A;
+            margin-top: -9%;
+            border-radius: 25px 25px 0px 0px;
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+            position: relative;
+            bottom:20px;
+        }
+        .logged{
+            width: 21%;
+            height: 37%;
+            margin-left: 39%;
+        }
+        button{
+            bottom: 20px;
+        }
+        .button {
+            margin-left: 23%;
+            margin-top: -15%;
+            display: inline-block;
+            border-radius: 4px;
+            background-color: rgb(179, 12, 12);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 100%;
+            padding: 9px;
+            width: 54%;
+            height: 24%;
+            cursor: pointer;
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.2s;
+        }
+        
+        .button span:after {
+            content: '\00bb';
+            position: relative;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+    <script>
+        function logout(){
+            document.getElementById("b1").innerHTML=window.open("tour.html","_self")
+        }
+    </script>
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    </head>
+    <body>
+        <div class="bar-div"> 
+            <img src="images\logo.png" alt="">
+            <ul>
+                <li class="list" onclick="logout()"><a>Logout</a></li>
+                <li class="list"><a href="innerlogin.html">Home</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="adminlogin">
+            <div class="divinside">
+                <h2>Member-Homepage</h2>
+            </div>
+            <img class="logged" src="images\logged.png" alt="">
+            <h4>User: Admin</h4>
+            <button class="button" style="vertical-align:middle" id="b1"onclick="logout()"><span>Logout</span>
+        </div>
+    <div class="slider">
+        <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 0px;">
+            <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                <ul class="amazingslider-slides" style="display:none;">
+                    <li><a href="karachi.html"><img src="images/Karachi.jpg" alt="Karachi"  title="Karachi" data-texteffect="Grey box" data-duration="2000" />
+                    </a></li>
+                    <li><a href="Islamabad.html"><img src="images/Islamabad.jpg" alt="Islamabad"  title="Islamabad" data-texteffect="Grey box" data-duration="2000" />
+                    </a></li>
+                    <li><a href="lahore.html"><img src="images/Lahore.jpg" alt="Lahore"  title="Lahore" data-texteffect="Grey box" data-duration="2000" />
+                    </a></li>
+                    <li><a href="NARAN.HTML"><img src="images/Naran.jpg" alt="Naran"  title="Naran" data-texteffect="Grey box" data-duration="2000" />
+                    </a></li>
+                </ul>
+            <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="About">
+       <h1> About Us </h1>
+    </div>
+    </body>
+</html>
